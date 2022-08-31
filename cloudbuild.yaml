@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/fluent-vortex-360604/first_app', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/fluent-vortex-360604/first_app']
